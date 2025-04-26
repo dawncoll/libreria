@@ -1,0 +1,43 @@
+-- 20 INSERTS en la tabla autor
+INSERT INTO autor (nombre, primer_apellido, segundo_apellido, descripcion) VALUES ('AutorNombre1', 'Apellido1_1', 'Apellido2_1', 'Descripción del autor 1');
+INSERT INTO autor (nombre, primer_apellido, segundo_apellido, descripcion) VALUES ('AutorNombre2', 'Apellido1_2', 'Apellido2_2', 'Descripción del autor 2');
+INSERT INTO autor (nombre, primer_apellido, segundo_apellido, descripcion) VALUES ('AutorNombre3', 'Apellido1_3', 'Apellido2_3', 'Descripción del autor 3');
+INSERT INTO autor (nombre, primer_apellido, segundo_apellido, descripcion) VALUES ('AutorNombre4', 'Apellido1_4', 'Apellido2_4', 'Descripción del autor 4');
+INSERT INTO autor (nombre, primer_apellido, segundo_apellido, descripcion) VALUES ('AutorNombre5', 'Apellido1_5', 'Apellido2_5', 'Descripción del autor 5');
+INSERT INTO autor (nombre, primer_apellido, segundo_apellido, descripcion) VALUES ('AutorNombre6', 'Apellido1_6', 'Apellido2_6', 'Descripción del autor 6');
+INSERT INTO autor (nombre, primer_apellido, segundo_apellido, descripcion) VALUES ('AutorNombre7', 'Apellido1_7', 'Apellido2_7', 'Descripción del autor 7');
+INSERT INTO autor (nombre, primer_apellido, segundo_apellido, descripcion) VALUES ('AutorNombre8', 'Apellido1_8', 'Apellido2_8', 'Descripción del autor 8');
+INSERT INTO autor (nombre, primer_apellido, segundo_apellido, descripcion) VALUES ('AutorNombre9', 'Apellido1_9', 'Apellido2_9', 'Descripción del autor 9');
+INSERT INTO autor (nombre, primer_apellido, segundo_apellido, descripcion) VALUES ('AutorNombre10', 'Apellido1_10', 'Apellido2_10', 'Descripción del autor 10');
+INSERT INTO autor (nombre, primer_apellido, segundo_apellido, descripcion) VALUES ('AutorNombre11', 'Apellido1_11', 'Apellido2_11', 'Descripción del autor 11');
+INSERT INTO autor (nombre, primer_apellido, segundo_apellido, descripcion) VALUES ('AutorNombre12', 'Apellido1_12', 'Apellido2_12', 'Descripción del autor 12');
+INSERT INTO autor (nombre, primer_apellido, segundo_apellido, descripcion) VALUES ('AutorNombre13', 'Apellido1_13', 'Apellido2_13', 'Descripción del autor 13');
+INSERT INTO autor (nombre, primer_apellido, segundo_apellido, descripcion) VALUES ('AutorNombre14', 'Apellido1_14', 'Apellido2_14', 'Descripción del autor 14');
+INSERT INTO autor (nombre, primer_apellido, segundo_apellido, descripcion) VALUES ('AutorNombre15', 'Apellido1_15', 'Apellido2_15', 'Descripción del autor 15');
+INSERT INTO autor (nombre, primer_apellido, segundo_apellido, descripcion) VALUES ('AutorNombre16', 'Apellido1_16', 'Apellido2_16', 'Descripción del autor 16');
+INSERT INTO autor (nombre, primer_apellido, segundo_apellido, descripcion) VALUES ('AutorNombre17', 'Apellido1_17', 'Apellido2_17', 'Descripción del autor 17');
+INSERT INTO autor (nombre, primer_apellido, segundo_apellido, descripcion) VALUES ('AutorNombre18', 'Apellido1_18', 'Apellido2_18', 'Descripción del autor 18');
+INSERT INTO autor (nombre, primer_apellido, segundo_apellido, descripcion) VALUES ('AutorNombre19', 'Apellido1_19', 'Apellido2_19', 'Descripción del autor 19');
+INSERT INTO autor (nombre, primer_apellido, segundo_apellido, descripcion) VALUES ('AutorNombre20', 'Apellido1_20', 'Apellido2_20', 'Descripción del autor 20');
+
+-- 20 INSERTS en la tabla libro
+INSERT INTO libro (titulo, primera_edicion, editor, descripcion, isbn, autor_id) VALUES ('LibroTitulo1', '2001-01-01', 'Editor1', 'Descripción del libro 1', 'ISBN00001', 1);
+INSERT INTO libro (titulo, primera_edicion, editor, descripcion, isbn, autor_id) VALUES ('LibroTitulo2', '2002-01-01', 'Editor2', 'Descripción del libro 2', 'ISBN00002', 2);
+INSERT INTO libro (titulo, primera_edicion, editor, descripcion, isbn, autor_id) VALUES ('LibroTitulo3', '2003-01-01', 'Editor3', 'Descripción del libro 3', 'ISBN00003', 3);
+INSERT INTO libro (titulo, primera_edicion, editor, descripcion, isbn, autor_id) VALUES ('LibroTitulo4', '2004-01-01', 'Editor4', 'Descripción del libro 4', 'ISBN00004', 4);
+INSERT INTO libro (titulo, primera_edicion, editor, descripcion, isbn, autor_id) VALUES ('LibroTitulo5', '2005-01-01', 'Editor5', 'Descripción del libro 5', 'ISBN00005', 5);
+INSERT INTO libro (titulo, primera_edicion, editor, descripcion, isbn, autor_id) VALUES ('LibroTitulo6', '2006-01-01', 'Editor6', 'Descripción del libro 6', 'ISBN00006', 6);
+INSERT INTO libro (titulo, primera_edicion, editor, descripcion, isbn, autor_id) VALUES ('LibroTitulo7', '2007-01-01', 'Editor7', 'Descripción del libro 7', 'ISBN00007', 7);
+INSERT INTO libro (titulo, primera_edicion, editor, descripcion, isbn, autor_id) VALUES ('LibroTitulo8', '2008-01-01', 'Editor8', 'Descripción del libro 8', 'ISBN00008', 8);
+INSERT INTO libro (titulo, primera_edicion, editor, descripcion, isbn, autor_id) VALUES ('LibroTitulo9', '2009-01-01', 'Editor9', 'Descripción del libro 9', 'ISBN00009', 9);
+INSERT INTO libro (titulo, primera_edicion, editor, descripcion, isbn, autor_id) VALUES ('LibroTitulo10', '2010-01-01', 'Editor10', 'Descripción del libro 10', 'ISBN00010', 10);
+INSERT INTO libro (titulo, primera_edicion, editor, descripcion, isbn, autor_id) VALUES ('LibroTitulo11', '2011-01-01', 'Editor11', 'Descripción del libro 11', 'ISBN00011', 11);
+INSERT INTO libro (titulo, primera_edicion, editor, descripcion, isbn, autor_id) VALUES ('LibroTitulo12', '2012-01-01', 'Editor12', 'Descripción del libro 12', 'ISBN00012', 12);
+INSERT INTO libro (titulo, primera_edicion, editor, descripcion, isbn, autor_id) VALUES ('LibroTitulo13', '2013-01-01', 'Editor13', 'Descripción del libro 13', 'ISBN00013', 13);
+INSERT INTO libro (titulo, primera_edicion, editor, descripcion, isbn, autor_id) VALUES ('LibroTitulo14', '2014-01-01', 'Editor14', 'Descripción del libro 14', 'ISBN00014', 14);
+INSERT INTO libro (titulo, primera_edicion, editor, descripcion, isbn, autor_id) VALUES ('LibroTitulo15', '2015-01-01', 'Editor15', 'Descripción del libro 15', 'ISBN00015', 15);
+INSERT INTO libro (titulo, primera_edicion, editor, descripcion, isbn, autor_id) VALUES ('LibroTitulo16', '2016-01-01', 'Editor16', 'Descripción del libro 16', 'ISBN00016', 16);
+INSERT INTO libro (titulo, primera_edicion, editor, descripcion, isbn, autor_id) VALUES ('LibroTitulo17', '2017-01-01', 'Editor17', 'Descripción del libro 17', 'ISBN00017', 17);
+INSERT INTO libro (titulo, primera_edicion, editor, descripcion, isbn, autor_id) VALUES ('LibroTitulo18', '2018-01-01', 'Editor18', 'Descripción del libro 18', 'ISBN00018', 18);
+INSERT INTO libro (titulo, primera_edicion, editor, descripcion, isbn, autor_id) VALUES ('LibroTitulo19', '2019-01-01', 'Editor19', 'Descripción del libro 19', 'ISBN00019', 19);
+INSERT INTO libro (titulo, primera_edicion, editor, descripcion, isbn, autor_id) VALUES ('LibroTitulo20', '2020-01-01', 'Editor20', 'Descripción del libro 20', 'ISBN00020', 20);

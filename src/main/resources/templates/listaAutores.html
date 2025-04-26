@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+          integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+    <title th:text="#{listaAutores.autores}"></title>
+</head>
+
+<body>
+<div th:insert="fragments/header :: header"></div>
+<div class="container">
+    <h3 th:text="#{listaAutores.autores}"></h3>
+    <hr>
+    <a th:href="@{/author/showFormForAdd}" class="btn btn-primary btn-sm mb-3">
+		<span th:text="#{listaAutores.addAutor}"></span>
+	</a>
+    <table class="table table-bordered table-striped">
+        <thead class="thead-dark">
+        <tr>
+
+            <th th:text="#{autor.nombre}"></th>
+			<th th:text="#{autor.primerApellido}"></th>
+			<th th:text="#{autor.segundoApellido}"></th>
+            <th th:text="#{autor.descripcion}"></th>
+            <th th:text="#{autor.accion}"></th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="tempAuthor : ${autoresPage.content}">
+
+            <td th:text="${tempAuthor.nombre}"/>
+            <td th:text="${tempAuthor.primerApellido}"/>
+			<td th:text="${tempAuthor.segundoApellido}"/>
+			<td th:text="${tempAuthor.descripcion}"/>
+            <td>
+                <div sec:authorize="hasAnyRole('USER', 'ADMIN')">
+                <!-- Add "update" button/link -->
+                <a th:href="@{/author/showFormForUpdate(authorId=${tempAuthor.id})}"
+                   class="btn btn-info btn-sm">
+                    Update
+                </a>
+                </div>
+                <div sec:authorize="hasRole('ADMIN')">
+                <!-- Add "delete" button/link -->
+                <a th:href="@{/author/delete(authorId=${tempAuthor.id})}"
+                   class="btn btn-danger btn-sm"
+                   onclick="if (!(confirm('Estás seguro que deseas eliminar este Autor?'))) return false">
+                    Delete
+                </a>
+                </div>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+	
+	<div th:if="${autoresPage.total < (autoresPage.pageable.pageNumber + 1) * autoresPage.pageable.pageSize}" class="pagination"
+        th:each="pageNumber : ${pageNumbers}">
+        <a th:href="@{/author/list(size=${autoresPage.pageable.pageSize}, page=${autoresPage.pageable.pageNumber + 1})}"
+            th:text=${pageNumber}
+            th:class="${pageNumber==autoresPage.number + 1} ? active"></a>
+    </div>
+	
+</div>
+
+</body>
+</html>
