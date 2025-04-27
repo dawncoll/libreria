@@ -40,7 +40,7 @@ public class AutorController {
     public String showFormForAdd(Model theModel) {
       
         Autor theAuthor = new Autor();
-        theModel.addAttribute("authors", theAuthor);
+        theModel.addAttribute("autor", theAuthor);
         return "autorForm";
     }
 
@@ -50,7 +50,7 @@ public class AutorController {
         
     	Optional<Autor> theAuthor = autorService.getAutor(theID);
     	if(theAuthor.isPresent()) {
-    		theModel.addAttribute("authors", theAuthor.get());
+    		theModel.addAttribute("autor", theAuthor.get());
     	}else {
     		//lalalalala
     	}
@@ -58,7 +58,7 @@ public class AutorController {
     }
     
     @PostMapping("/save")
-    public String saveAuthor(@ModelAttribute("authors") Autor theAuthor) {
+    public String saveAuthor(@ModelAttribute("autor") Autor theAuthor) {
       
     	autorService.save(theAuthor);
         return "redirect:/author/list";

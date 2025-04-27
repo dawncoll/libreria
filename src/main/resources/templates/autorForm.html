@@ -18,7 +18,7 @@
     <h3 th:text="#{autorForm.datosAutor}"></h3>
     <hr>
     <form action="#" th:action="@{/author/save}"
-          th:object="${authors}" method="POST">
+          th:object="${autor}" method="POST">
         <!-- Add hidden form field to handle update -->
         <input type="hidden" th:field="*{id}" />
         <input type="text" th:field="*{nombre}"
