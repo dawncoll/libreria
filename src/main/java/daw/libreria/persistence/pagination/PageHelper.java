@@ -68,12 +68,11 @@ public abstract class PageHelper {
 		}
 	}
 	
-	
-	
 	public static Pageable toPageable(int pageNumber, int pageSize, String sortBy, boolean ascending) {
 		Sort sort = ascending ? Sort.by(sortBy).ascending() : Sort.by(sortBy).descending();
         Pageable pageable = PageRequest.of(pageNumber, pageSize, sort);
         return pageable;
 	}	
+	
 
 }

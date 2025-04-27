@@ -1,6 +1,9 @@
 package daw.libreria.web.controller;
 
+import java.util.List;
 import java.util.Optional;
+import java.util.stream.Collectors;
+import java.util.stream.IntStream;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
@@ -33,6 +36,17 @@ public class AutorController {
         Pageable pageable = PageHelper.toPageable(page, size, sortBy, ascending);
         Page<Autor> autoresPg = autorService.findAll(pageable);
         theModel.addAttribute("autoresPage", autoresPg);
+        
+        //código mal puesto. A la larga se repetirá en distintos puntos. 
+        //El alumnado debe detectarlo
+        int totalPages = autoresPg.getTotalPages();
+        if (totalPages > 0) {
+            List<Integer> pageNumbers = IntStream.rangeClosed(1, totalPages)
+                .boxed()
+                .collect(Collectors.toList());
+            theModel.addAttribute("pageNumbers", pageNumbers);
+        }
+        
         return "listaAutores";
     }
 
