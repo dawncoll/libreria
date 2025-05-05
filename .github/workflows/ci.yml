@@ -37,7 +37,8 @@ jobs:
       - name: SonarCloud Scan
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-        run: mvn sonar:sonar \
+        run: |
+          mvn sonar:sonar \
           -Dsonar.projectKey=dawncoll_libreria \
           -Dsonar.organization=dawncoll \
           -Dsonar.host.url=https://sonarcloud.io \
