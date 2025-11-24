@@ -1,7 +1,6 @@
 package daw.libreria.domain.model;
 
 import java.io.Serializable;
-import java.util.Date;
 
 public class Autor implements Serializable{
 
@@ -20,24 +19,15 @@ public class Autor implements Serializable{
 	
 	private String descripcion;
 	
-	private String ciudadNacimiento;
+	private String numeroSeguridadSocial;
 	
-	private Date fechaNacimiento;
-	
-	public String getCiudadNacimiento() {
-		return ciudadNacimiento;
+
+	public String getNumeroSeguridadSocial() {
+		return numeroSeguridadSocial;
 	}
 
-	public void setCiudadNacimiento(String ciudadNacimiento) {
-		this.ciudadNacimiento = ciudadNacimiento;
-	}
-
-	public Date getFechaNacimiento() {
-		return fechaNacimiento;
-	}
-
-	public void setFechaNacimiento(Date fechaNacimiento) {
-		this.fechaNacimiento = fechaNacimiento;
+	public void setNumeroSeguridadSocial(String numeroSeguridadSocial) {
+		this.numeroSeguridadSocial = numeroSeguridadSocial;
 	}
 
 	public Long getId() {
