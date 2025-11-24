@@ -20,6 +20,7 @@ public class Autor implements Serializable{
 	
 	private String descripcion;
 	
+<<<<<<< HEAD
 	private String numeroSeguridadSocial;
 	
 	private String ciudadNacimiento;
@@ -34,6 +35,13 @@ public class Autor implements Serializable{
 	public void setNumeroSeguridadSocial(String numeroSeguridadSocial) {
 		this.numeroSeguridadSocial = numeroSeguridadSocial;
 	}
+=======
+	private String ciudadNacimiento;
+	
+	private Date fechaNacimiento;
+	
+	
+>>>>>>> branch 'prova_rebase' of https://github.com/dawncoll/libreria.git
 	
 	public String getCiudadNacimiento() {
 		return ciudadNacimiento;

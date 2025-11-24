@@ -31,6 +31,7 @@ public class AutorEntity {
 		
 	 @Column(name = "fecha_nacimiento")
 	 private Date fechaNacimiento;
+<<<<<<< HEAD
 	 
 	 @Column(name = "numero_seguridad_social")
 	 private String numeroSeguridadSocial;
@@ -57,6 +58,23 @@ public class AutorEntity {
 
 	public void setNumeroSeguridadSocial(String numeroSeguridadSocial) {
 		this.numeroSeguridadSocial = numeroSeguridadSocial;
+=======
+
+	public String getCiudadNacimiento() {
+		return ciudadNacimiento;
+	}
+
+	public void setCiudadNacimiento(String ciudadNacimiento) {
+		this.ciudadNacimiento = ciudadNacimiento;
+	}
+
+	public Date getFechaNacimiento() {
+		return fechaNacimiento;
+	}
+
+	public void setFechaNacimiento(Date fechaNacimiento) {
+		this.fechaNacimiento = fechaNacimiento;
+>>>>>>> branch 'prova_rebase' of https://github.com/dawncoll/libreria.git
 	}
 
 	public Long getId() {

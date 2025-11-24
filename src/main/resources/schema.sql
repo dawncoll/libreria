@@ -21,7 +21,13 @@ CREATE TABLE libro (
 );
 
 Alter table autor (
+<<<<<<< HEAD
 	numero_seguridad_social VARCHAR(255),
 	ciudad_nacimiento VARCHAR(255),
 	fecha_nacimiento timestamp
 );
+=======
+	ciudad_nacimiento VARCHAR(255),
+	fecha_nacimiento timestamp
+);
+>>>>>>> branch 'prova_rebase' of https://github.com/dawncoll/libreria.git
