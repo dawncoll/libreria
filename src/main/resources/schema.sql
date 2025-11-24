@@ -21,5 +21,7 @@ CREATE TABLE libro (
 );
 
 Alter table autor (
-	numero_seguridad_social VARCHAR(255)
+	numero_seguridad_social VARCHAR(255),
+	ciudad_nacimiento VARCHAR(255),
+	fecha_nacimiento timestamp
 );
