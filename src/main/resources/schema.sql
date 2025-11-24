@@ -19,3 +19,9 @@ CREATE TABLE libro (
     autor_id BIGINT,
     FOREIGN KEY (autor_id) REFERENCES autor(id)
 );
+
+Alter table autor (
+	
+	ciudad_nacimiento VARCHAR(255),
+	fecha_nacimiento timestamp
+);

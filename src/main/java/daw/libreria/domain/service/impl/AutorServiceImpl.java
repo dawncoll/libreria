@@ -2,7 +2,6 @@ package daw.libreria.domain.service.impl;
 
 import java.util.Optional;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
@@ -16,11 +15,14 @@ import daw.libreria.persistence.repository.AutorRepository;
 @Service
 public class AutorServiceImpl implements AutorService{
 
-	@Autowired
-	private AutorRepository autorRepository;
+	private final AutorRepository autorRepository;
 	
-	@Autowired
-	private AutorMapper autorMapper;
+	private final AutorMapper autorMapper;
+	
+	public AutorServiceImpl(AutorRepository autorRepository, AutorMapper autorMapper) {
+		this.autorRepository=autorRepository;
+		this.autorMapper=autorMapper;
+	}
 	
 	@Override
 	public Page<Autor> findAll(Pageable pageable) {

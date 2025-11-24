@@ -1,5 +1,7 @@
 package daw.libreria.persistence.entity;
 
+import java.util.Date;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
@@ -23,6 +25,28 @@ public class AutorEntity {
 	
 	 @Column(name = "descripcion")
 	 private String descripcion;
+	 
+	 @Column(name = "ciudad_nacimiento")
+	 private String ciudadNacimiento;
+		
+	 @Column(name = "fecha_nacimiento")
+	 private Date fechaNacimiento;
+
+	public String getCiudadNacimiento() {
+		return ciudadNacimiento;
+	}
+
+	public void setCiudadNacimiento(String ciudadNacimiento) {
+		this.ciudadNacimiento = ciudadNacimiento;
+	}
+
+	public Date getFechaNacimiento() {
+		return fechaNacimiento;
+	}
+
+	public void setFechaNacimiento(Date fechaNacimiento) {
+		this.fechaNacimiento = fechaNacimiento;
+	}
 
 	public Long getId() {
 		return id;
